@@ -72,7 +72,7 @@ class Application(tk.Frame):
         self.path = path
 
         self.master = master
-        self.master.title('scrollbar trial')
+        self.master.title(path.stem)
         self.master.geometry(f"{win_width}x{win_height}")
         self.pack(fill=tk.BOTH, expand=True)
         self.create_widgets()
